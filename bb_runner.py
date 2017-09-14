@@ -22,7 +22,7 @@ import serial.tools.list_ports
 
 
 
-lcl = '~/Smart-Breadboard/ws2'
+lcl = '~/bb_deployment'
 hal = 'https://eesjs1.net/testsite/bb_logger'
 
 
