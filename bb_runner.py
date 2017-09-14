@@ -228,8 +228,11 @@ def dataThread():
         #print(bins)
         uname,password = [i.strip() for i in open(os.path.expanduser(lcl+'/bb_login'))]
         payload = {'user':uname,'board':str(bins)}
-        r = requests.post(hal, json=payload, timeout=1.0)
-        print(r.status_code)
+        try:
+            r = requests.post(hal, json=payload, timeout=1.0)
+            print(r.status_code)
+        except:
+            print("issue happened: {}".format(r.status_code))
         #print(r.json())
         node_voltage = list()
         time_x = list()
