@@ -21,10 +21,10 @@ Make sure the most recent versions get installed.
 
 One-time use of the code can be started simply by running the program with Python.  
 
-For more standard operation, so that it is always running, we'll use `systemd/systemctl`.  First cp the file `bb.service` file into `/lib/systemd/system/`.  Then give proper permissions with the following command (we'll call it `pyrunner`, but you can call it whatever)
+For more standard operation, so that it is always running, we'll use `systemd/systemctl`.  First cp the file `bb.service` file into `/lib/systemd/system/`.  Then give proper permissions with the following command (we'll call it `bb`, but you can call it whatever)
 
 ```
-sudo chmod 644 /lib/systemd/system/pyrunner.service
+sudo chmod 644 /lib/systemd/system/bb.service
 ```
 
 Then turn on daemon-reload:
@@ -36,7 +36,7 @@ sudo systemctl daemon-reload
 Then enable the service:
 
 ```
-sudo systemctl enable pyrunner.service
+sudo systemctl enable bb.service
 ```
 
 Then you might as well reboot:
@@ -48,7 +48,6 @@ sudo reboot
 When the computer comes back, check to see if stuff is running. No errors is a good thing:
 
 ```
-sudo systemctl status pyrunner.service
+sudo systemctl status bb.service
 ```
 
-There's a `audio` directory where example files will live
