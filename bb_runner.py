@@ -32,7 +32,7 @@ hal = 'https://eesjs1.net/testsite/bb_logger'
 '''
 
 def get_teensy_port():
-    teensy_port = list(serial.tools.list_ports.grep("Teensy"))
+    teensy_port = list(serial.tools.list_ports.grep("16c0"))
     if len(teensy_port) == 1:
         print("Automatically found Teensy: {}".format(teensy_port[0].description))
         return teensy_port[0].device
