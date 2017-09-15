@@ -26,6 +26,8 @@ lcl = '/home/pi/bb_deployment' #change if on another system
 hal = 'https://eesjs1.net/testsite/bb_logger'
 
 
+time.sleep(25)##sleep at very start to get loaded up for network purposes!
+
 '''Automatically find Teensy on COM Port
     Written by Joe Steinmeyer, 2017
     Edited by Joel Voldman, 2017
