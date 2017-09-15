@@ -21,7 +21,9 @@ Make sure the most recent versions get installed.
 
 One-time use of the code can be started simply by running the program with Python.  
 
-For more standard operation, so that it is always running, we'll use `systemd/systemctl`.  First cp the file `bb.service` file into `/lib/systemd/system/`.  Then give proper permissions with the following command (we'll call it `bb`, but you can call it whatever)
+For more standard operation, so that it is always running, we'll use `systemd/systemctl`.  
+
+First cp the file `bb.service` file into `/lib/systemd/system/`.  Then give proper permissions with the following command (we'll call it `bb`, but you can call it whatever)
 
 ```
 sudo chmod 644 /lib/systemd/system/bb.service

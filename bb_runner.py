@@ -22,7 +22,7 @@ import serial.tools.list_ports
 
 
 
-lcl = '~/bb_deployment'
+lcl = '/home/pi/bb_deployment' #change if on another system
 hal = 'https://eesjs1.net/testsite/bb_logger'
 
 
