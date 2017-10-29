@@ -75,7 +75,7 @@ def get_teensy_port():
             return port_dict[teensy_id][0][0]
 
 def get_esp_port():
-    teensy_port = list(serial.tools.list_ports.grep(""))
+    teensy_port = list(serial.tools.list_ports.grep("SLAB_USBtoUART"))
     if len(teensy_port) == 1:
         print("Automatically found ESP32: {}".format(teensy_port[0]))
         return teensy_port[0][0]
